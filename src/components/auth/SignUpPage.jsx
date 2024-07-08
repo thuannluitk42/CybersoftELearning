@@ -31,8 +31,12 @@ const SignUpPage = () => {
             }, 2000); // 2 seconds delay
 
         } catch (error) {
+            console.error('Register failed1:', error.response);
+            console.error('Register failed2:', error.response.data);
+            console.error('Register failed3:', error.message);
+
             console.error('Register failed:', error.response ? error.response.data : error.message);
-            setErrorMessage(error.response ? error.response.data.message : 'Something went wrong. Please try again.');
+            setErrorMessage(error.response ? error.message : 'Something went wrong. Please try again.');
             setSuccessMessage('');
         }
     };
