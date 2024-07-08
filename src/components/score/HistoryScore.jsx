@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useTable, usePagination } from 'react-table';
 import ReactPaginate from 'react-paginate';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useUser } from '../utils/UserContext';
+import { useUser } from '../../../utils/UserContext';
 import { fetchScoreByUsername } from "../../../utils/QuizService";
 
 const TableComponent = ({ columns, data }) => {
