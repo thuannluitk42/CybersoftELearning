@@ -33,7 +33,7 @@ const SignUpPage = () => {
         } catch (error) {
 
             console.error('Register failed:', error);
-            setErrorMessage(error.response ? error.message : 'Something went wrong. Please try again.');
+            setErrorMessage(error.status ? error.message : 'Something went wrong. Please try again.');
             setSuccessMessage('');
         }
     };
