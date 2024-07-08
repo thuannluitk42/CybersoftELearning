@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 import { Link } from "react-router-dom"
-import { createQuestion, getSubjects } from "../../../utils/QuizService"
+import { createQuestion, getSubjects } from "../../utils/QuizService"
 
 const AddQuestion = () => {
 	const [question, setQuestionText] = useState("")
