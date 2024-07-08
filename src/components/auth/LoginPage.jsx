@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { signInFunction } from "../../../utils/AuthService";
 import { Navigate } from "react-router-dom";
-import { useUser } from "../../../utils/UserContext";
+import { useUser } from '../utils/UserContext';
 
 const LoginPage = () => {
   const { setUser } = useUser();

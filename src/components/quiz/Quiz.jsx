@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useNavigate, useLocation } from "react-router-dom"
 import { fetchQuizForUser, saveAchievementsForUser } from "../../../utils/QuizService"
 import AnswerOptions from "../../../utils/AnswerOptions"
-import { useUser } from "../../../utils/UserContext";
+import { useUser } from '../utils/UserContext';
 
 const Quiz = () => {
 	const [quizQuestions, setQuizQuestions] = useState([
