@@ -31,7 +31,7 @@ const SignUpPage = () => {
             }, 2000); // 2 seconds delay
 
         } catch (error) {
-            console.error('Register failed1:', error.response);
+            console.error('Register failed1:', error);
             console.error('Register failed2:', error.response.data);
             console.error('Register failed3:', error.message);
 
