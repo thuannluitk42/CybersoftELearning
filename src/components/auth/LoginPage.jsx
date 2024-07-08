@@ -25,11 +25,8 @@ const LoginPage = () => {
       setUser({ username });
       setRedirectToHome(true);
     } catch (error) {
-      console.error(
-        "Login failed:",
-        error.response ? error.response.data : error.message
-      );
-      setErrorMessage(error.response ? "Invalid username or password." : error.message);
+      console.error( "Login failed:", error);
+      setErrorMessage(error.status ? error.message : "Invalid username or password.");
     }
   };
 
