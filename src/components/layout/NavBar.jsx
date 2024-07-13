@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useUser } from '../../utils/UserContext';
+import { useUser } from "../../utils/UserContext";
 
 const Navbar = () => {
   const { user, setUser } = useUser();
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary px-5 shadow sticky-top">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" to={"/"}>
+        <NavLink className="navbar-brand" to="/">
           Online Quiz App
         </NavLink>
         <button
@@ -27,24 +27,24 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav ms-auto">
             {user ? (
               <>
                 <li className="nav-item">
                   <span className="nav-link disabled">Hello, {user.username}</span>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to={"/admin"}>
+                  <NavLink className="nav-link" to="/admin">
                     Admin
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to={"/quiz-stepper"}>
+                  <NavLink className="nav-link" to="/quiz-stepper">
                     Take Quiz
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to={"/history-score"}>
+                  <NavLink className="nav-link" to="/history-score">
                     History Score
                   </NavLink>
                 </li>
@@ -57,12 +57,12 @@ const Navbar = () => {
             ) : (
               <>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to={"/sign-in"}>
+                  <NavLink className="nav-link" to="/sign-in">
                     Sign In
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to={"/sign-up"}>
+                  <NavLink className="nav-link" to="/sign-up">
                     Sign Up
                   </NavLink>
                 </li>

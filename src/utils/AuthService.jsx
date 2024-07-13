@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: "https://cybersoftelearningbe-production.up.railway.app/api/auth"
+    // baseURL: "https://cybersoftelearningbe-production.up.railway.app/api/auth"
+    baseURL: "http://localhost:8080/api/auth"
 });
 
 export const signInFunction = async (LoginDto) => {

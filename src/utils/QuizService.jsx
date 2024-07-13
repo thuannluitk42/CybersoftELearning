@@ -1,7 +1,8 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://cybersoftelearningbe-production.up.railway.app/api/quizzes"
+  // baseURL: "https://cybersoftelearningbe-production.up.railway.app/api/quizzes"
+  baseURL: "http://localhost:8080/api/quizzes"
 })
 
 export const createQuestion = async(quizQustion) =>{
